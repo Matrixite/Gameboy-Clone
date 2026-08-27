@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "GameBoy_FPGA")(type "KiCad")(uri "${KIPRJMOD}/GameBoy_FPGA.pretty")(options "")(descr "Local footprints for GameBoy FPGA Rev A"))
+)
