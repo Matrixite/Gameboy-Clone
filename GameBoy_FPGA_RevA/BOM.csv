@@ -1,0 +1,20 @@
+Ref,Qty,Value / Part,Package / Form,Notes
+U1,1,Sipeed Tang Nano 9K,"Module, 2x24 2.54mm",FPGA/PSRAM/flash/clock/USB-JTAG/display resources
+U2-U5,4,SN74LVC8T245PWR,TSSOP-24,Dual-supply 3.3V/5V level translation
+U6,1,PCF8574T/PCF8574D,SOIC-16,I2C button expander; address 0
+Q1,1,BSS138,SOT-23,Open-drain/bidirectional reset level shift
+"R1,R2",2,10k,0603/0805,"Reset pull-ups, 5V and 3.3V sides"
+R3,1,10k,0603/0805,DATA_OE_N pull-up; translator disabled by default
+R4,1,10k,0603/0805,DATA_DIR pull-down
+"R5,R6",2,4.7k,0603/0805,I2C pull-ups
+"R7,R8",2,1k,0603/0805,PWM audio low-pass series resistors
+"R9,R10",2,10k,0603/0805,Cartridge audio mix resistors
+"C1,C2",2,10nF,0603/0805,PWM audio low-pass capacitors
+C3,1,1uF,0603/0805 or film,Cartridge VIN AC coupling
+C4,1,10uF,0805/1206,Cartridge 5V bulk decoupling
+C5,1,100nF,0603/0805,Cartridge rail local decoupling
+C6-C15,10,100nF,0603/0805,Local IC decoupling; place at translator/PCF supply pins
+SW1-SW8,8,6x6mm tactile switch,THT,Up/Down/Left/Right/A/B/Start/Select
+J1,1,32-pin Game Boy cartridge socket,"1.50mm pitch, exact part TBD",PCB footprint is PROVISIONAL; verify mechanical tabs/body
+J2,1,1x4 2.54mm header,THT,"Filtered L/R, GND, +5V for external amp/headphone daughterboard"
+H1-H4,4,M3 mounting hole,3.2mm NPTH,Carrier mounting
