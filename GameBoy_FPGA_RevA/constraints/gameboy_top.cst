@@ -1,0 +1,48 @@
+// GameBoy FPGA Rev A - Tang Nano 9K package pin constraints
+// Tang module pads 40-47 are intentionally unused: they are on the 1.8 V bank.
+
+// On-board 27 MHz oscillator (not a module header pad)
+IO_LOC "clk_27m" 52;
+
+IO_LOC "cart_a[0]" 38;
+IO_LOC "cart_a[1]" 37;
+IO_LOC "cart_a[2]" 36;
+IO_LOC "cart_a[3]" 39;
+IO_LOC "cart_a[4]" 25;
+IO_LOC "cart_a[5]" 26;
+IO_LOC "cart_a[6]" 27;
+IO_LOC "cart_a[7]" 28;
+IO_LOC "cart_a[8]" 29;
+IO_LOC "cart_a[9]" 30;
+IO_LOC "cart_a[10]" 33;
+IO_LOC "cart_a[11]" 34;
+IO_LOC "cart_a[12]" 40;
+IO_LOC "cart_a[13]" 35;
+IO_LOC "cart_a[14]" 41;
+IO_LOC "cart_a[15]" 42;
+
+IO_LOC "cart_d[0]" 51;
+IO_LOC "cart_d[1]" 53;
+IO_LOC "cart_d[2]" 54;
+IO_LOC "cart_d[3]" 55;
+IO_LOC "cart_d[4]" 56;
+IO_LOC "cart_d[5]" 57;
+IO_LOC "cart_d[6]" 68;
+IO_LOC "cart_d[7]" 69;
+
+IO_LOC "cart_phi" 32;
+IO_LOC "cart_wr_n" 31;
+IO_LOC "cart_rd_n" 49;
+IO_LOC "cart_cs_n" 48;
+IO_LOC "cart_res_od" 70;
+IO_LOC "cart_data_dir" 71;
+IO_LOC "cart_data_oe_n" 72;
+IO_LOC "btn_i2c_scl" 73;
+IO_LOC "btn_i2c_sda" 74;
+IO_LOC "audio_l_pwm" 75;
+IO_LOC "audio_r_pwm" 76;
+IO_LOC "spare0" 77;
+IO_LOC "spare1" 63;
+
+// Set all of the above user I/O to 3.3 V LVCMOS in Gowin IDE.
+// Keep the translator disabled until the Game Boy core has completed reset.
